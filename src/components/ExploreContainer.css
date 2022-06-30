@@ -1,10 +1,5 @@
 .container {
-  text-align: center;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  padding: 0px 20px;
 }
 
 .container strong {
@@ -21,4 +16,81 @@
 
 .container a {
   text-decoration: none;
+}
+
+h1 {
+  margin: 0px;
+}
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.episode-info {
+
+}
+.episode-info h1 {
+  margin: 0px;
+}
+.episode-info h5 {
+  margin: 0px;
+}
+
+.watchalong {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.watchalong h5 {
+  margin: 0px;
+}
+.timer {
+
+}
+.timer-button {
+  --background: none;
+  --box-shadow: none;
+}
+.timer-button ion-icon {
+  color: #A6DDDE;
+}
+.timer-button:hover {
+  --background: none;
+}
+.timer-button:hover ion-icon {
+  color: white;
+}
+
+ion-grid {
+  margin: 20px 40px;
+}
+
+.reference-body {
+  color: white;
+}
+.reference-body h5 {
+  margin: 0px;
+}
+
+.timestamp {
+  transition: 0.2s all ease-in;
+}
+.timestamp:hover {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+
+.reference-body {
+  opacity: 0;
+  transition: 0.2s all ease-in;
+}
+.reference-body.active {
+  opacity: 1;
+}
+.timestamp:hover + .reference-body {
+  opacity: 1;
 }
